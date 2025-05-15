@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Корзина товаров</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="main-menu">
+        <div class="site-title">
+          <a href="index.html">
+            <img src="picture/logo.png" class="logo" />
+          </a>
+          <h1>Детский мир</h1>
+        </div>
+
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#" class="button">Категории игрушек</a>
+            <ul class="sub-menu">
+              <li><a href="#" class="subbutton">Для девочек</a></li>
+              <li><a href="#" class="subbutton">Для мальчиков</a></li>
+              <li><a href="#" class="subbutton">Унисекс</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="button">Доставка</a>
+            <ul class="sub-menu">
+              <li><a href="#" class="subbutton">По Москве</a></li>
+              <li><a href="#" class="subbutton">По регионам</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="button">Контакты</a>
+            <ul class="sub-menu">
+              <li><a href="#" class="subbutton">Баз Лайтер</a></li>
+              <li><a href="#" class="subbutton">Лунтик</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="button">Корзина</a>
+          </li>
+        </ul>
+
+        <div class="login-buttons">
+          <button href="#" class="button">
+            <img class="loginprint" src="picture/registr.png" />Вход
+          </button>
+          <button href="#" class="button">
+            <img class="registrationprint" src="picture/vhod.png" />Регистрация
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <p><b>Добро пожаловать в корзину товаров!</b></p>
+      <table class="basket">
+        <caption>
+          Ваша корзина
+        </caption>
+        <thead>
+          <tr>
+            <th>Номер позиции</th>
+            <th>Фото и название товара</th>
+            <th>Количество</th>
+            <th>Цена</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <div class="product-card">
+                <img src="picture/car_2.png" class="product-image" />
+                <div class="product-name">Машинка детская</div>
+              </div>
+            </td>
+            <td>1 шт.</td>
+            <td>1000 рублей</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <div class="product-card">
+                <img src="picture/car_1.png" class="product-image" />
+                <div class="product-name">Машинка взрослая</div>
+              </div>
+            </td>
+            <td>1 шт.</td>
+            <td>2000 рублей</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Итоговая стоимость</td>
+            <td>3000 рублей</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input
+                type="promo"
+                name="promo"
+                id="promo"
+                placeholder="Введите промокод"
+              />
+            </td>
+            <td><button class="promo-button">Применить промокод</button></td>
+            <td><button class="pay-button">Перейти к оплате</button></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <footer>Подвал страницы</footer>
+  </body>
+</html>

@@ -1,0 +1,420 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(191, 236, 253);
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 1000;
+}
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+/* Шапка сайта */
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  display: inline-block;
+}
+
+.site-title::before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.site-title > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.menu {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu::before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.menu > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu__item {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: rgb(77, 174, 220);
+  color: white;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  background-color: rgb(77, 174, 220);
+  border-radius: 5px;
+  min-width: 150px;
+}
+
+.menu__item:hover .sub-menu {
+  display: block;
+}
+
+.subbutton {
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.subbutton:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(77, 174, 220);
+}
+
+.login-buttons {
+  float: right;
+}
+
+.login-buttons::before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.login-buttons > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.loginprint,
+.registrationprint {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.enter_button {
+  display: block;
+  margin: 0 auto;
+  height: 1cm;
+  width: 5cm;
+  background-color: #8b80c5;
+  border-color: #8b67be;
+  border-style: ridge;
+  cursor: pointer;
+}
+
+.enter_button:hover {
+  display: block;
+  margin: 0 auto;
+  height: 1cm;
+  width: 5cm;
+  background-color: #8b80c5;
+  border-color: #8b67be;
+  border-style: ridge;
+  cursor: pointer;
+}
+
+.registration_button {
+  display: block;
+  margin: 0 auto;
+  height: 1cm;
+  width: 5cm;
+  background-color: #8b80c5;
+  border-color: aliceblue;
+  border-style: ridge;
+  cursor: pointer;
+}
+
+.registration_button:hover {
+  display: block;
+  margin: 0 auto;
+  height: 1cm;
+  width: 5cm;
+  background-color: #8b80c5;
+  border-color: aliceblue;
+  border-style: ridge;
+  cursor: pointer;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+}
+
+/* Тело страницы */
+
+main {
+  background-image: url(../picture/back_main.jpg);
+  background-color: rgb(243, 243, 243);
+  background-image: linear-gradient(
+    rgb(191, 236, 253),
+    rgb(77, 174, 220),
+    rgb(59, 146, 189)
+  );
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.category {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+footer {
+  background-color: rgb(59, 146, 189);
+}
+
+/* Форма регистрации */
+
+.form_sign {
+  background-color: rgb(255, 255, 255);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  text-indent: 20px;
+  width: 100%;
+  height: 3rem;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  margin: 0.5rem 0 2.2rem 0;
+  padding: 0 20px;
+  background: #ddd;
+}
+
+.sel-pattern {
+  text-indent: 20px;
+  width: 100%;
+  height: 3rem;
+  display: inline-block;
+  border: none;
+  margin: 0.5rem 0 2.2rem 0;
+  border-radius: 4px;
+  background: #ddd;
+}
+
+.star {
+  color: #9c2525;
+}
+
+.description {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.SignBtn {
+  background-color: rgb(19, 166, 12);
+  color: white;
+  padding: 1rem 1.5rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.sign-up-content {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.gender-label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.radio-option {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 5px;
+}
+
+.photo {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.gender-field {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: 0.1rem solid rgb(79, 205, 233);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.title_reg {
+  display: flex;
+  justify-content: center;
+}
+
+/* Таблица */
+
+.basket {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.basket th,
+.basket td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.basket th {
+  background-color: rgb(59, 146, 189);
+  color: white;
+  font-weight: bold;
+}
+
+.basket tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.basket tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+.basket tbody tr:hover {
+  background-color: rgb(77, 174, 220);
+  color: white;
+}
+
+.basket tfoot tr:first-child {
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pay-button,
+.promo-button {
+  padding: 12px 30px;
+  background: rgb(59, 146, 189);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pay-button:hover,
+.promo-button:hover {
+  background: #135931;
+}
+
+input[type="promo"] {
+  text-indent: 20px;
+  width: 100%;
+  height: 3rem;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background: #ddd;
+}
+
+.product-card {
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.product-image {
+  width: 100%;
+  height: 120px;
+  object-fit:contain;
+  border: none;
+}
+
+.product-name {
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
